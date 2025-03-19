@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C3E50;
+    color: white;
+}
+
+header {
+    background: #34495E;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Menghapus ikon centang dari navigasi */
+nav ul li::before {
+    content: none !important;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #1A252F;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Styling daftar dengan centang, kecuali di dalam header */
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    list-style: none;
+    margin: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Menambahkan ikon centang hanya di daftar dalam section */
+section ul li::before {
+    content: "✔";
+    color: #FFD700;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #34495E;
+    margin-top: 20px;
+}
